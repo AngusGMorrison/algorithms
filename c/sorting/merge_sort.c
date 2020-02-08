@@ -5,6 +5,9 @@
   Merge sort
   - O(nlogn)
   - Divide and conquer algorithm
+  - More efficient than quicksort for larger datasets
+  - Requires additional storage for auxiliary arrays
+  - Stable
 */
 
 void sort(int arr[], int start_idx, int end_idx);
