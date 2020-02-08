@@ -1,11 +1,11 @@
 =begin
-  Insertion sort
+  Selection sort
   - O(n^2)
   - Counterpart of bubble sort
   - Performs poorly in real-world applications
 =end
 
-def insertion_sort(arr)
+def selection_sort(arr)
   length = arr.length()
   for i in (0...(length - 1)) do
     for j in ((i + 1)...length) do
@@ -17,5 +17,5 @@ def insertion_sort(arr)
 end
 
 numbers = [ 4, 2, 7, 3, 5, 6, 0 ]
-insertion_sort(numbers)
+selection_sort(numbers)
 puts numbers
