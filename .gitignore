@@ -1,0 +1,8 @@
+# Ignore all files without extension to exclude binaries
+*
+!*.*
+!*/
+
+# Ignore
+
+*/.DS_Store
