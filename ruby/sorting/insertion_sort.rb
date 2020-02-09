@@ -6,8 +6,7 @@
 =end
 
 def insertion_sort(arr)
-  length = arr.length()
-  for i in (1...length) do
+  for i in (1...arr.length) do
     key = arr[i];
     j = i - 1;
     while j >= 0 && arr[j] > key
