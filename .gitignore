@@ -3,6 +3,6 @@
 !*.*
 !*/
 
-# Ignore specific files and extensions
+# Ignore
+
 */.DS_Store
-practice/
