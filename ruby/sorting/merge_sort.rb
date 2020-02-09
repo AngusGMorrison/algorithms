@@ -17,7 +17,7 @@ def merge_sort(arr)
 
   # Merge the halves by comparing their first elements and shifting
   sorted = []
-  unless first_half.empty? || second_half.empty?
+  while first_half.any? && second_half.any?
     sorted << (first_half[0] < second_half[0] ? first_half.shift : second_half.shift)
   end
 
