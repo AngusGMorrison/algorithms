@@ -6,15 +6,12 @@
 =end
 
 def insertion_sort(arr)
-  length = arr.length()
-  for i in (1...length) do
-    key = arr[i];
-    j = i - 1;
-    while j >= 0 && arr[j] > key
-      arr[j + 1] = arr[j]
+  for i in (1...arr.length)
+    j = i
+    while j > 0 && arr[j - 1] > arr[j]
+      arr[j], arr[j - 1] = arr[j - 1], arr[j]
       j -= 1
     end
-    arr[j + 1] = key
   end
 end
 
