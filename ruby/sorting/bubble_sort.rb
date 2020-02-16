@@ -1,11 +1,14 @@
 =begin
   Bubble sort
+  - Θ(n^2)
   - O(n^2)
-  - Performs poorly in real-world scenarios
+  - Ω(n^2)
+  - Stable
+  - Performs poorly; not used in practice
 =end
 
 def bubble_sort(arr)
-  length = arr.length()
+  length = arr.length
   (length - 1).times do |i|
     (length - i - 1).times do |j|
       if arr[j] > arr[j + 1]
