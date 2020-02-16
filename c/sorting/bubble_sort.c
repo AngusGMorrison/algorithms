@@ -2,8 +2,11 @@
 
 /*
   Bubble sort
+  - Θ(n^2)
   - O(n^2)
-  - Performs poorly in real-world use
+  - Ω(n^2)
+  - Stable
+  - Performs poorly; not used in practice
 */
 
 void sort(int arr[], size_t size);
