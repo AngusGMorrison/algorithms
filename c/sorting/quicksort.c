@@ -9,7 +9,7 @@
  * - Divide and conquer algorithm
  * - In-place
  * - Unstable
- * - Potentially more efficient than merge sort for smaller datasets
+ * - Outperforms merge sort for smaller datasets
 **/
 
 void quick_sort(int arr[], int low, int high);
