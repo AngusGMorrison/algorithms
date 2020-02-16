@@ -1,8 +1,10 @@
 =begin
   Insertion sort
+  - Θ(n^2)
   - O(n^2)
-  - May outperform merge sort for very small datasets
-  - Not typically used in real-world context
+  - Ω(n)
+  - Stable
+  - Limited real-world use
 =end
 
 def insertion_sort(arr)

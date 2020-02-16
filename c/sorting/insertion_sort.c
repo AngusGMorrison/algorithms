@@ -1,11 +1,13 @@
 #include<stdio.h>
 
-/*
-  Insertion sort
-  - O(n^2)
-  - Faster than merge sort for very small values of n
-  - Limited real-world use
-*/
+/**
+  * Insertion sort
+  * - Θ(n^2)
+  * - O(n^2)
+  * - Ω(n)
+  * - Stable
+  * - Limited real-world use
+**/
 
 void sort(int arr[], size_t size);
 void print(int arr[], size_t size);
