@@ -13,7 +13,7 @@
  * - This version does not implement Sedgwick's method for limiting space complexity to O(logn)
 **/
 
-void quick_sort(int arr[], int low, int high);
+void quicksort(int arr[], int low, int high);
 int sort_and_partition(int arr[], int low, int high);
 void swap(int *first, int *second);
 void print(int arr[], size_t size);
@@ -22,11 +22,11 @@ int main(void)
 {
     int arr[] = { 4, 8, 1, 6, 0, 3, 5, 2};
     size_t size = sizeof(arr) / sizeof(arr[0]);
-    quick_sort(arr, 0, size - 1);
+    quicksort(arr, 0, size - 1);
     print(arr, size);
 }
 
-void quick_sort(int arr[], int low, int high)
+void quicksort(int arr[], int low, int high)
 {
     if (low >= high) return;
 
@@ -34,8 +34,8 @@ void quick_sort(int arr[], int low, int high)
     // Nothing to the left of partition is greater than the last chosen pivot
     // Nothing to the right of partition is less than the last chosen pivot
     // Sort elements before and after the partition
-    quick_sort(arr, low, partition);
-    quick_sort(arr, partition + 1, high);
+    quicksort(arr, low, partition);
+    quicksort(arr, partition + 1, high);
 }
 
 int sort_and_partition(int arr[], int low, int high)
