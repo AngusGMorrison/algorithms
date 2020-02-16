@@ -2,11 +2,13 @@
 
 /**
  * Merge sort
+ * - Θ(nlogn)
  * - O(nlogn)
+ * - Ω(nlogn)
  * - Divide and conquer algorithm
- * - Outperforms n^2 sorts for all but very small datasets
- * - Requires additional storage for helper array
+ * - Out-of-place: needs additional storage for helper array
  * - Stable
+ * - Outperforms quicksort for large datasets
 **/
 
 void merge_sort(int arr[], size_t size);
