@@ -1,13 +1,13 @@
 #include<stdio.h>
 
-/*
-  Bubble sort
-  - Θ(n^2)
-  - O(n^2)
-  - Ω(n^2)
-  - Stable
-  - Performs poorly; not used in practice
-*/
+/**
+  * Bubble sort
+  * - Θ(n^2)
+  * - O(n^2)
+  * - Ω(n^2)
+  * - Stable
+  * - Performs poorly; not used in practice
+**/
 
 void sort(int arr[], size_t size);
 void swap(int* first, int* second);
