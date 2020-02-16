@@ -1,10 +1,12 @@
 =begin
-  Merge sort
-  - O(nlogn)
-  - Divide and conquer alogrithm
-  - More efficient than quicksort for large datasets
-  - Requires additional storage for auxiliary arrays (not in-place)
-  - Stable
+  * Merge sort
+  * - Θ(nlogn)
+  * - O(nlogn)
+  * - Ω(nlogn)
+  * - Divide and conquer algorithm
+  * - Out-of-place: needs additional storage for helper array
+  * - Stable
+  * - Outperforms quicksort for large datasets
 =end
 
 def merge_sort(arr)
