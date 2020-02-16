@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * Quicksort (Hoare)
+ * Quicksort (Hoare partition scheme)
  * - Θ(nlogn)
  * - O(n^2) for already sorted array with pivot as first or last element
  * - Ω(nlogn) for simple partition
@@ -10,6 +10,7 @@
  * - In-place
  * - Unstable
  * - Outperforms merge sort for smaller datasets
+ * - This version does not implement Sedgwick's method for limiting space complexity to O(logn)
 **/
 
 void quick_sort(int arr[], int low, int high);
