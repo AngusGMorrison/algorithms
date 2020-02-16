@@ -1,11 +1,13 @@
 #include<stdio.h>
 
-/*
-  Selection sort
-  - O(n^2)
-  - Counterpart to bubble sort
-  - Performs poorly in real-world applications
-*/
+/**
+  * Selection sort
+  * - Θ(n^2)
+  * - O(n^2)
+  * - Ω(n^2)
+  * - Unstable
+  * - Performs poorly; not used in practice
+**/
 
 void sort(int arr[], size_t size);
 void swap(int* first, int* second);
