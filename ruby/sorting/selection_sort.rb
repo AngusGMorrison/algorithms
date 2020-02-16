@@ -1,12 +1,14 @@
 =begin
   Selection sort
+  - Θ(n^2)
   - O(n^2)
-  - Counterpart of bubble sort
-  - Performs poorly in real-world applications
+  - Ω(n^2)
+  - Unstable
+  - Performs poorly; not used in practice
 =end
 
 def selection_sort(arr)
-  length = arr.length()
+  length = arr.length
   for i in (0...(length - 1)) do
     for j in ((i + 1)...length) do
       if arr[j] < arr[i]
